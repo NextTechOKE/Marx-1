@@ -9,3 +9,6 @@ https://howtomechatronics.com/tutorials/arduino/how-to-use-a-rgb-led-with-arduin
 
 bbbb
 whatever you want
+also I'm going to write down reminders here too
+oh no git stoped working
+oh boy 
