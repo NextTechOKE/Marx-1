@@ -66,20 +66,15 @@ public class Robot extends IterativeRobot {
 		CameraServer.getInstance().startAutomaticCapture();
 // Setup Position. It always defaults to right. 
 		chooser.addDefault("Straight", C_AUTO);
-		String R_AUTO;
 		chooser.addObject("Right Switch", R_AUTO);
-		String L_AUTO;
 		chooser.addObject("Left Switch", L_AUTO);
-		String R_SCALE;
 		chooser.addObject("Dream Center", R_SCALE);
-		String L_SCALE;
-		chooser.addObject("Left Scale", L_SCALE);
+		chooser.addObject("Left Scale", L_SCALE);		
 		SmartDashboard.putData("Auto choices", chooser);
 
 		speedController0 = new Spark(MOTOR0_PORT);
 		speedController1 = new Spark(MOTOR1_PORT);
 		mainTimer = new Timer();
-		int JOYSTICK_PORT;
 		joystick = new Joystick(JOYSTICK_PORT);
 		drive = new DifferentialDrive(speedController0, speedController1);
 // Motors
