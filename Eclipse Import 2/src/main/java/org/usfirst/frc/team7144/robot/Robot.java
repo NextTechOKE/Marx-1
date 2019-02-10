@@ -33,8 +33,8 @@ public class Robot extends IterativeRobot {
 //These are the ports for your motors and the joystick port should be set to the joystick that you use to move
 	private static final int MOTOR0_PORT = 0;
 	private static final int MOTOR1_PORT = 1;
-	private static final int JOYSTICK_PORT = 0;
-	private static final int JOYSTICK_PORT = 1;
+	private static final int JOYSTICK0_PORT = 0;
+	private static final int JOYSTICK1_PORT = 1;
 
 // Basic Setup
 	private PWMSpeedController speedController0 = null;
@@ -91,6 +91,21 @@ public class Robot extends IterativeRobot {
 //setup position buttons
 		Scheduler.getInstance().run();
 	}
+	
+	/**
+	 * @return the joystick1Port
+	 */
+	public static int getJoystick1Port() {
+		return JOYSTICK1_PORT;
+	}
+
+	/**
+	 * @return the joystick0Port
+	 */
+	public static int getJoystick0Port() {
+		return JOYSTICK0_PORT;
+	}
+
 	public void autonomousInit() {
 		autoSelected = chooser.getSelected();
 		System.out.println(autoSelected);
