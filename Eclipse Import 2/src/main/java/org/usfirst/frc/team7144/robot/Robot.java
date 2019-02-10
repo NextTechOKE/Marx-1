@@ -138,7 +138,8 @@ public class Robot extends IterativeRobot {
 		double ScalePower = 0.35;
 		
 		switch (autoSelected) {
-// ALL the different Auto options are listed below--- Maybe this center will work - going right			
+String R_SCALE;
+		// ALL the different Auto options are listed below--- Maybe this center will work - going right			
 		case R_SCALE:
 			if(gameData.charAt(0) == 'R')
 			{
@@ -348,9 +349,11 @@ public class Robot extends IterativeRobot {
 	public void teleopPeriodic() {
 //SONIC CODY
 		drive.arcadeDrive(joystick.getRawAxis(1) * TELEOP_SPEED, joystick.getRawAxis(0) * TELEOP_SPEED );
-//SONIC JARRETT - ARM
+		Object PDPJNI;
+		// SONIC JARRETT - ARM
 		double worm_current = Math.max((PDPJNI.getPDPChannelCurrent((byte)2, 0) + PDPJNI.getPDPChannelCurrent((byte)13, 0)) / 250.0 + 0.15, 1.0);
-		System.out.println(PDPJNI.getPDPChannelCurrent((byte)2, 0)+PDPJNI.getPDPChannelCurrent((byte)13, 0));
+		System.out.println(
+				((Object) PDPJNI).getPDPChannelCurrent((byte) 2, 0) + PDPJNI.getPDPChannelCurrent((byte) 13, 0));
 		speedController2.set( 1.0 * worm_current * joystick2.getY());
 		speedController3.set(-1.0 * worm_current * joystick2.getY());
 		System.out.println(41);
