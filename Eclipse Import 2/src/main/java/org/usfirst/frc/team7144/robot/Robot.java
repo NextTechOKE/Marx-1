@@ -28,7 +28,7 @@ public class Robot extends IterativeRobot {
 	
 
 //SONIC CODY This number multiplies the joystick input by this number.
-	private static final double TELEOP_SPEED = 0.9;
+	private static final double TELEOP_SPEED = 1.0;
 
 //These are the ports for your motors and the joystick port should be set to the joystick that you use to move
 	private static final int MOTOR0_PORT = 0;
