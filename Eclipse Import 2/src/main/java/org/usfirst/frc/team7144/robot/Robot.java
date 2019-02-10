@@ -24,19 +24,17 @@ public class Robot extends IterativeRobot {
 
 //Setting up auto, position sensitive
 	private static final String C_AUTO = "Straight";
-	private static final String R_AUTO = "Right Switch";
-	private static final String L_AUTO = "Left Switch";
-	private static final String R_SCALE = "Dream Center";
-	private static final String L_SCALE = "Left Scale";
+	
 	
 
 //SONIC CODY This number multiplies the joystick input by this number.
-	private static final double TELEOP_SPEED = 0.8;
+	private static final double TELEOP_SPEED = 0.9;
 
 //These are the ports for your motors and the joystick port should be set to the joystick that you use to move
 	private static final int MOTOR0_PORT = 0;
 	private static final int MOTOR1_PORT = 1;
 	private static final int JOYSTICK_PORT = 0;
+	private static final int JOYSTICK_PORT = 1;
 
 // Basic Setup
 	private PWMSpeedController speedController0 = null;
